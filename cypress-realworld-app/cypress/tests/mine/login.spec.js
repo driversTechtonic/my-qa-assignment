@@ -14,6 +14,6 @@ describe("Login", () => {
   it.only("invalid login test", () => {
     cy.get("#username").type("Katharina_Berry");
     cy.get("#password").type("s4cret");
-    cy.get(".makeStyles-form-4").submit();
+    cy.get(".makeStyles-form-4").click();
   });
 });
